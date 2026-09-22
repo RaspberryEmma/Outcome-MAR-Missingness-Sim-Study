@@ -1,0 +1,8 @@
+
+# checking r2x and r2y empirically from data
+
+check_model   <- lm("Y ~ .", data = FULL_dataset)
+check_model_X <- lm("X ~ .", data = subset(FULL_dataset, select = -c(Y)))
+print(paste0("R2Y: ", summary(check_model)$r.squared))
+print(paste0("R2X: ", summary(check_model_X)$r.squared))
+stop("CHECK R2X, R2Y")
