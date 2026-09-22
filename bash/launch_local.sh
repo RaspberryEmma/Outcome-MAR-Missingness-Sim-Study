@@ -13,7 +13,7 @@
 # ****************************************
 
 # send BP script to BP server home directory
-scp update_and_launch_modified.sh aa22294@bp1-login.acrc.bris.ac.uk:~
+scp update_and_launch_outcome_modified.sh aa22294@bp1-login.acrc.bris.ac.uk:~
 
 
 # log-in to BP
